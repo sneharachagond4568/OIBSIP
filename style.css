@@ -1,0 +1,185 @@
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #3b2416;
+    background-color: #fffaf5;
+}
+
+
+/* Navigation Bar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+    background-color: #3b2416;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #d6a15d;
+}
+
+
+/* Hero Section */
+.hero {
+    min-height: 85vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 40px 20px;
+
+    background: linear-gradient(
+        rgba(59, 36, 22, 0.75),
+        rgba(59, 36, 22, 0.75)
+    );
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #f5e6d3;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+
+    background-color: #d6a15d;
+    color: #3b2416;
+
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+
+/* About Section */
+.about {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.about h2,
+.menu h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+}
+
+
+/* Menu Section */
+.menu {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #f3e5d5;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.coffee-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.coffee-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.coffee-card p {
+    margin-bottom: 15px;
+}
+
+.coffee-card span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Footer */
+footer {
+    background-color: #3b2416;
+    color: white;
+
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    nav {
+        flex
